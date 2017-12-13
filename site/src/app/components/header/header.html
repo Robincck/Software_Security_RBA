@@ -1,0 +1,34 @@
+<nav class="navbar-default">
+    <div id="header" class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false">
+                <span class="sr-only">Navigatie tonen</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-brand">
+
+            </div>
+        </div>
+
+        <div *ngIf="page == 'students'" id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/student" class="active">Student</a></li>
+                <li><a routerLink="/user">Gebruiker</a></li>
+                <li><a (click)="logout()" routerLink="/login">Uitloggen</a></li>
+            </ul>
+        </div>
+
+        <div *ngIf="page == 'users'" id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/student" >Student</a></li>
+                <li><a routerLink="/user" class="active">Gebruiker</a></li>
+                <li><a (click)="logout()" routerLink="/login">Uitloggen</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

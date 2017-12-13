@@ -1,0 +1,299 @@
+body {
+    font-family: "Lato";
+    background-color: #F8F8F8;
+    padding-bottom: 20px !important;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #FFFFFF !important;
+    margin-bottom: 20px;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.alwaysmargfix {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.navbar-nav > li > a {
+    color: #555;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #3FADE8 !important;
+}
+
+.navbar-default {
+    border-color: #e0e0e0 !important;
+    border-bottom: 1px solid;
+}
+
+.navbar-brand {
+    height: 100px;
+    padding-right: 0;
+}
+
+#logo {
+    max-height: 100%;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.cal-cell {
+    cursor: pointer;
+}
+
+.cal-day-selected {
+    background-color: #b9e7ff !important;
+    cursor: default;
+}
+
+.cal-day-selected-nologs {
+    background-color: #ffbfae !important;
+    cursor: default;
+}
+
+.glyphicon-pencil:hover, .glyphicon-remove:hover, .glyphicon-dashboard:hover  {
+    cursor: pointer;
+}
+
+.active {
+    color: #337ab7 !important;
+}
+
+.alertmargfix {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.buttonmargfix {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    #content {
+        padding-top: 10em;
+    }
+
+    .navbar-nav > li {
+        font-size: 1.2em;
+    }
+
+    .margfix {
+        margin-top: 20px;
+    }
+    
+    .text-left-big {
+        text-align: left;
+    }
+    .text-right-big {
+        text-align: right;
+    }
+}
+
+@media (max-width: 500px) {
+    body, .btn, .cal-cell, input, select, .input-group-addon {
+        font-size: 2.5vw;
+        word-wrap: break-word;
+    }
+
+    input, select, .input-group-addon {
+        height: 26px;
+    }
+
+    h3, h4 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        height: 60px;
+    }
+
+    .navbar-toggle {
+        margin-top: 1em;
+        background-color: #f5f5f5 !important;
+    }
+
+    #content {
+        padding-top: 5em;
+    }
+
+    .navbar-nav > li {
+        text-align: center;
+        font-size: 1.2em;
+        background-color: #f5f5f5;
+    }
+
+    .navbar-nav {
+        margin: 0 -15px;
+        padding: 0 !important;
+    }
+
+    .active {
+        background-color: #ffffff;
+    }
+
+    .col-xs-12 {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .cal-day-badge {
+        display: none !important;
+    }
+
+    .cal-day-cell, .cal-cell-top {
+        min-height: 0px !important;
+    }
+
+    .smallmargfix {
+        margin-bottom: 10px !important;
+    }
+
+    .alwaysmargfix {
+        margin-top: 10px;
+    }
+
+    .navbar-default {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .navbar-nav > li {
+        font-size: 0.8em;
+    }
+
+    .navbar-brand {
+        height: 60px;
+    }
+
+    .navbar-nav {
+        padding: 0.5em 0;
+    }
+
+    .panelfix {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1001px) {
+    .navbar-brand {
+        height: 80px;
+    }
+
+    .navbar-nav > li {
+        font-size: 1em;
+    }
+
+    .navbar-nav {
+        padding: 1.2em 0;
+    }
+
+    .navbar-header {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1201px) {
+    .navbar-nav {
+        padding: 2em 0;
+    }
+}
+
+/*CSS Gebruiker/projectbeheer */
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+#lblMedewerker {
+    background-color: inherit;
+    font-size: inherit;
+    color: black;
+    height: 100%;
+}
+
+#zoekBar {
+    margin-top: 2px;
+}
+
+#search-result:hover {
+    color: #eee;
+    background-color: #607D8B;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#Search {
+    position: relative;
+    display: inline-block;
+}
+
+#search-result{
+    cursor: pointer;
+    overflow: visible;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    width: 90%;
+}
+
+/* Links inside the dropdown */
+#search-result div {
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+#Search #search-result {
+    display: block;
+}
+
+#search-result div:hover {
+    background-color: #f1f1f1;
+}
+
+#crossMarker:hover{
+    cursor: default;
+}
+
+#pdfButton:hover{
+    cursor: pointer;
+}
+
+.smallpad {
+    padding: 10px;
+}

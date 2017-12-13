@@ -1,0 +1,60 @@
+<headerComponent [page]="page"></headerComponent>
+
+<div class="container content">
+    <div id="studentKnoppen" class="col-xs-12 col-md-3 col-md-push-9 smallmargfix">
+        <button class="btn btn-block btn-lg btn-default" data-toggle="modal" data-target="#addCustomerModal">Student toevoegen </button>
+    </div>
+
+    <div id="studentAanpassen" class="col-xs-12 col-md-9 col-md-pull-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div id="zoekBar">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div id="imaginary_container">
+                                <div class="input-group stylish-input-group">
+                                    <input type="text" class="form-control" placeholder="Zoek student">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="studentLabel">
+                    <form *ngIf="students?.length > 0">
+                        <div class="form-group">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Naam</th>
+                                        <th class="text-center">Leeftijd</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let student of students">
+                                        <td>{{ student.name }}</td>
+                                        <td class="text-center">{{ student.age }}</td>
+                                        <td class="text-right"><span data-toggle="modal"
+                                                  class="glyphicon glyphicon-pencil"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+
+                <form *ngIf="!students?.length > 0">
+                    <div class="form-group">
+                        <h3 class="nomargin">Geen studenten gevonden.</h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
